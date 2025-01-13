@@ -3,274 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Enhanced Sample HTML Page">
-    <meta name="author" content="Random Generator">
-    <title>Enhanced Sample Index Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Enhanced Sample HTML Page with Navigation Bar">
+    <title>Enhanced Sample Index Page with Navigation</title>
     <style>
-        /* General Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth;
+            line-height: 1.6;
         }
-
-        /* Navigation Bar */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
         nav {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background: #444;
+            color: #fff;
+            padding: 0.5rem 1rem;
         }
-
         nav ul {
-            list-style-type: none;
-            margin: 0;
+            list-style: none;
             padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-
-        nav ul li a:hover {
-            background-color: #575757;
-            border-radius: 5px;
-        }
-
-        /* Hero Section */
-        #hero {
-            background-image: url('https://via.placeholder.com/1200x600');
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        #hero h1 {
-            font-size: 3rem;
-        }
-
-        #hero p {
-            font-size: 1.5rem;
-            margin: 20px 0;
-        }
-
-        #hero button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-
-        #hero button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Testimonials Section */
-        #testimonials {
-            background-color: #f9f9f9;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        #testimonials h2 {
-            margin-bottom: 20px;
-        }
-
-        #testimonials blockquote {
-            font-style: italic;
-            margin: 20px auto;
-            max-width: 600px;
-        }
-
-        #testimonials cite {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        /* FAQ Section */
-        #faq {
-            padding: 50px 20px;
-        }
-
-        #faq h2 {
-            margin-bottom: 20px;
-        }
-
-        .faq-item {
-            margin-bottom: 15px;
-        }
-
-        .faq-item h3 {
-            cursor: pointer;
             margin: 0;
-            color: #007BFF;
+            display: flex;
+            justify-content: center;
         }
-
-        .faq-item p {
-            display: none;
-            margin: 5px 0 0 0;
+        nav ul li {
+            margin: 0 1rem;
         }
-
-        /* Back-to-Top Button */
-        #back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: none;
-        }
-
-        #back-to-top:hover {
-            background-color: #0056b3;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer a {
-            color: #007BFF;
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
         }
-
-        footer a:hover {
-            text-decoration: underline;
+        section {
+            padding: 2rem;
+        }
+        .hero {
+            background: #f4f4f4;
+            padding: 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .testimonials, .faq {
+            background: #eaeaea;
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 0.5rem 1rem;
+            background: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to the Enhanced Sample Page</h1>
     </header>
-
-    <section id="hero">
-        <h1>Welcome to Our Enhanced Website</h1>
-        <p>Your one-stop solution for all web development needs.</p>
-        <button onclick="alert('Thanks for visiting!')">Get Started</button>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <h1>Your One-Stop Solution</h1>
+        <p>Discover our range of services and offerings to elevate your experience.</p>
+        <button onclick="alert('Get Started!')">Get Started</button>
     </section>
-
     <section id="about">
         <h2>About Us</h2>
-        <p>We are a fictitious organization designed to populate your web projects with content.</p>
-        <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+        <p>We are a dedicated team committed to providing top-notch solutions for all your needs.</p>
     </section>
-
     <section id="services">
         <h2>Our Services</h2>
         <ul>
-            <li>Random HTML content generation</li>
-            <li>Sample styles and themes</li>
-            <li>Testing and debugging support</li>
+            <li>Web Development</li>
+            <li>SEO Optimization</li>
+            <li>Content Marketing</li>
         </ul>
     </section>
-
-    <section id="testimonials">
-        <h2>What Our Clients Say</h2>
-        <blockquote>
-            "This website is amazing! It made our development process so much easier."
-            <cite>- Alex Johnson</cite>
-        </blockquote>
-        <blockquote>
-            "I loved the sample content! It was exactly what I needed for my project."
-            <cite>- Sarah Brown</cite>
-        </blockquote>
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <p>"This service changed my life!" - Happy Customer</p>
+        <p>"Highly recommended for professionals!" - Business Owner</p>
     </section>
-
-    <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <h3>What services do you offer?</h3>
-            <p>We provide sample content, web templates, and debugging assistance.</p>
-        </div>
-        <div class="faq-item">
-            <h3>How can I contact you?</h3>
-            <p>You can reach us via the contact form below.</p>
-        </div>
+    <section id="faq" class="faq">
+        <h2>FAQ</h2>
+        <p><strong>Q:</strong> How do I get started?<br><strong>A:</strong> Click the "Get Started" button above!</p>
     </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="submit-form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <br>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
-
     <footer>
-        <p>&copy; 2025 Enhanced Website. All rights reserved.</p>
-        <p>Follow us on 
-            <a href="https://twitter.com" target="_blank">Twitter</a>, 
-            <a href="https://facebook.com" target="_blank">Facebook</a>, and 
-            <a href="https://instagram.com" target="_blank">Instagram</a>.
-        </p>
-        <p>
-            <a href="#home">Home</a> | 
-            <a href="#about">About</a> | 
-            <a href="#services">Services</a>
-        </p>
+        <p>&copy; 2025 Enhanced Sample Page. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Show the back-to-top button when scrolling down
-        window.onscroll = function() {
-            const btn = document.getElementById("back-to-top");
-            if (document.documentElement.scrollTop > 200) {
-                btn.style.display = "block";
-            } else {
-                btn.style.display = "none";
-            }
-        };
-
-        // Toggle FAQ answers
-        document.querySelectorAll('.faq-item h3').forEach(item => {
-            item.addEventListener('click', () => {
-                const next = item.nextElementSibling;
-                next.style.display = next.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-    </script>
+    <button class="back-to-top" onclick="window.scrollTo(0, 0)">Back to Top</button>
 </body>
 </html>
