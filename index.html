@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sample HTML Page for Demonstration">
+    <meta name="description" content="Sample HTML Page with Navigation Bar">
     <meta name="author" content="Random Generator">
-    <title>Sample Index Page</title>
+    <title>Sample Index Page with Navigation</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Simple styling for the navigation bar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,7 +58,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="home">
         <h1>Welcome to Our Sample Website</h1>
         <p>We provide randomly generated content for your development needs!</p>
